@@ -1,0 +1,30 @@
+
+<h1>Registrieren</h1>
+
+
+<form *ngIf="signUpForm" (ngSubmit)="onSubmit(signUpForm.value)" [formGroup]="signUpForm">
+
+  <mat-form-field>
+    Name:
+    <input type="text" matInput formControlName="nameCtrl">
+  </mat-form-field><br />
+
+  <mat-form-field>
+    E-Mail:
+    <input type="email" matInput formControlName="emailCtrl">
+  </mat-form-field><br />
+
+  <mat-form-field>
+    Passwort:
+    <input type="password" matInput formControlName="passwordCtrl">
+  </mat-form-field><br />
+
+  <mat-form-field>
+    Passwort Check:
+    <input type="password" matInput formControlName="passwordRepeatCtrl">
+  </mat-form-field><br />
+
+  <div class="form-row">
+    <button mat-button type="submit">Save</button>
+  </div>
+</form>
