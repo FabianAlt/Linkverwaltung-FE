@@ -1,0 +1,24 @@
+$header-height: 4rem;
+
+#app-header{
+    height: $header-height;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#app-sidebar {
+    background-color: #ccc;
+    min-height: 100%;
+    position: relative;
+    width: 25vw;
+}
+  
+
+#app-body {
+    display: flex;
+    min-height: 100%;
+    padding-top: $header-height;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+}
